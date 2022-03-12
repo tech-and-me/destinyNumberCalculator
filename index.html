@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="container-fluid flex">
+        <h1>Destiny Number Calculator</h1>
+    </header>
+    
+    <main class="container flex">
+        <label for="nameInput">Please enter your name, then <br>click Submit to reveal the meaning of your name</label>
+    <input type="text" name="nameInput" id="nameInput" placeholder="Example: John Smith" onkeyup="clearText()">
+    <button type="submit" id="submitBtn" onclick="calculateName()">Submit</button>
+    <textarea name="meaning" id="meaning" cols="30" rows="10"></textarea> 
+    </main>
+       
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
