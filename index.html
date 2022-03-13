@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
@@ -14,13 +17,32 @@
     
     <main class="container flex">
         <label for="nameInput">Please enter your name, then <br>click Submit to reveal the meaning of your name</label>
-    <input type="text" name="nameInput" id="nameInput" placeholder="Example: John Smith" onkeyup="clearText()">
+    <input type="text" name="nameInput" id="nameInput" placeholder="Example: John Smith"  onclick="clearAllText()">
     <button type="submit" id="submitBtn" onclick="calculateName()">Submit</button>
     <textarea name="meaning" id="meaning" cols="30" rows="10"></textarea> 
+    <div class="disclaimer">
+        Disclaimer: Information presented in this website is based on https://askastrology.com/
+        <br>Numberrology system used is : Pythagorean calculation method.
+    </div>
     </main>
+
+    <footer class="flex">
+        <hr>
+        <div>
+            <img src="./logoWhite.png" alt="">
+            <p>  Developed by Phary Phal &copy 2022. <br> All rights reserved. </p>
+        </div>
+      
+
+        <p class="icon"> 
+            <a href="https://www.linkedin.com/in/phary-phal/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/AndmeTech" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="mailto:pharyphal@icloud.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope-square"></i></a>
+        </p>
+        
+
+    </footer>
        
-
-
     <script src="./script.js"></script>
 </body>
 </html>

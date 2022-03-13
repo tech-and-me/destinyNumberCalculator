@@ -59,6 +59,7 @@ const alphaObj = {
 }
 
 
+
 const submitBtnElm = document.getElementById("submitBtn");
 const nameInputElm = document.getElementById("nameInput");
 const meaningTextElm = document.getElementById("meaning");
@@ -87,7 +88,9 @@ const calculateName = () => {
 
 }
 
-const clearText = () => {
-    console.log("fired");
+const clearAllText = () => {
+    // console.log("clear text input fired")
+    nameInputElm.value = "";
     meaningTextElm.textContent = "";
+
 }
