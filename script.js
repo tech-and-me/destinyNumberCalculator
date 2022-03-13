@@ -1,6 +1,6 @@
 
 const destinyObj = {
-    "1" : "An individual that has a Destiny number one attracts maverick energy. Pioneers seek them out to get help breaking barriers and charting new directions. They can get along with people who have strong personalities and individualistic drives.Determined people seek them out because they are not afraid of what is new or the need to change. People can come and go in their lives, which is okay since destiny wants them to help others along their unique life path and keep on moving on.",
+    "1" : "An individual that has a Destiny number one attracts maverick energy. Pioneers seek them out to get help breaking barriers and charting new directions. They can get along with people who have strong personalities and individualistic drives.Determined people seek them out because they are not afraid of what is new or the need to change. People can come and go in their lives, which is okay since destiny wants them to help others along their unique life path and keep on moving on. ",
 
     "2" : "An individual that has a Destiny number two attracts people into partnership and can help others with their relationships. Therefore, they make excellent counselors and negotiators. Their personality reacts to others and facilitates healthy interactions.They show others how to relate and communicate. So, they encourage people to share and be vulnerable.  Destiny wants these individuals to help others learn how to connect.",
 
@@ -63,33 +63,38 @@ const alphaObj = {
 const submitBtnElm = document.getElementById("submitBtn");
 const nameInputElm = document.getElementById("nameInput");
 const meaningTextElm = document.getElementById("meaning");
+const firstNameElm = document.getElementById("firstName");
+const displayNumElm = document.getElementById("displayNum");
+const greetingElm = document.getElementById("greeting");
+
 const calculateName = () => {
-    let name = nameInputElm.value.replaceAll(" ","");
+
+    let name = nameInputElm.value;
+    let firstName = name.split(" ")[0];
+    // Capitalize firt letter of firstname
+    firstName = firstName.charAt(0).toUpperCase() + firstName.slice(1);
+    let fullName = name.replaceAll(" ","");
     console.log("Name after remove white space : ", name);
-    let nameArray = name.toUpperCase().split("");
+    let nameArray = fullName.toUpperCase().split("");
     let number = 0;
-    console.log("name array is : ", nameArray);
     nameArray.forEach((element,index) => {
         number += alphaObj[element];
     });
-    console.log("raw number is : ", number);
-    
-    
+
     while (!(number.toString() in destinyObj)){
         let numberArr = number.toString().split("");
         const initialValue = 0;
         number = numberArr.reduce((accum,current) => Number(accum) + Number(current) ,initialValue);
     }
-    console.log(number);
-
-    let str = destinyObj[number];
-    console.log(str);
-    meaningTextElm.textContent = str;
+    firstNameElm.innerText = firstName;
+    displayNumElm.innerText = number;
+    firstNameElm.style.display = "inline-block";
+    greetingElm.style.display = "inline-block";
+    meaningTextElm.textContent = destinyObj[number];
 
 }
 
 const clearAllText = () => {
-    // console.log("clear text input fired")
     nameInputElm.value = "";
     meaningTextElm.textContent = "";
 

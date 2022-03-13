@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Monoton&family=Nunito+Sans:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Exo:wght@300&family=Monoton&family=Nunito+Sans:wght@200&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +11,7 @@
 
 body{
     background-color: rgb(129, 199, 211);
+    font-family: 'Monoton', cursive;
 }
 
 
@@ -36,7 +37,7 @@ h1{
     background-color: rgb(37, 55, 58);
     color: white;
     font-family: 'Monoton', cursive;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     border-radius: 50px;
     
 }
@@ -46,6 +47,23 @@ h1{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+}
+
+#greeting, #firstName{
+    display: none;
+    font-size: 2.3rem;
+    padding-top: 1rem;
+    color: rgb(158, 16, 73);
+    font-weight: bold;
+    /* font-family: 'Monoton', cursive; */
+    letter-spacing: 4px;
+    font-family: 'Caveat', cursive;
+}
+
+#displayNum{
+    color: rgb(158, 16, 73);
+    font-size: 5rem;
+    font-weight: bolder;
 }
 
 input{
@@ -151,5 +169,13 @@ footer .icon{
 
     .disclaimer{
         font-size: 0.6rem;
+    }
+
+    #greeting, #firstName{
+        font-size: 1.5rem;
+    }
+
+    #displayNum{
+        font-size: 2.5rem;
     }
 }
