@@ -52,11 +52,11 @@ h1{
 
 #greeting, #firstName{
     display: none;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     padding-top: 1rem;
-    color: rgb(158, 16, 73);
+    color: rgb(165, 32, 85);
     font-weight: bold;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     font-family: 'Caveat', cursive;
 }
 
