@@ -18,8 +18,9 @@ body{
 .container-fluid{
     width:  100%;
 }
+
 .container{
-    width: 80%;
+    width: 90%;
     margin: 1rem auto;
 }
 
@@ -55,7 +56,6 @@ h1{
     padding-top: 1rem;
     color: rgb(158, 16, 73);
     font-weight: bold;
-    /* font-family: 'Monoton', cursive; */
     letter-spacing: 4px;
     font-family: 'Caveat', cursive;
 }
@@ -73,7 +73,6 @@ input{
     text-align: center;
     margin: 1rem auto;
     outline: none;
-    /* background-color: rgb(224, 209, 228); */
     border: solid 1px rgb(128, 128, 241);
     font-size: 1.3rem;
     border-radius: 5px;
@@ -101,11 +100,10 @@ button{
 }
 
 textarea{
-    min-width: 70%;
-    max-width: 95%;
-    height: auto;
+    min-width: 50%;
+    max-width: 100%;
     margin: 1rem auto;
-    padding: 3rem;
+    padding: 2rem;
     font-size: 1rem;
     line-height: 35px;
     /* border-radius: 25%; */
@@ -149,8 +147,8 @@ footer .icon{
 
 @media (max-width: 992px){
     h1{
-        font-size: 1.1rem;
-        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        padding: 1rem 1.2rem;
     }
     label{
         font-size: 0.9rem;
