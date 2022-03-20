@@ -60,11 +60,33 @@ h1{
     font-family: 'Caveat', cursive;
 }
 
+
 #displayNum{
     color: rgb(158, 16, 73);
     font-size: 5rem;
     font-weight: bolder;
+    display: none;
 }
+
+#briefMeaningP{
+    font-size: 1.2rem;
+    display: none;
+    font-style: italic;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#briefMeaning{
+    color: rgb(158, 16, 73);
+    font-size: 2rem;
+    display: none; 
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    font-family: 'Caveat', cursive;
+}
+
 
 input{
     min-width: 30%;
